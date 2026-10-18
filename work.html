@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>作品 · 肖辅 UX 设计师</title>
+  <meta name="description" content="肖辅的 11 个设计案例，分产品构建、运营提升、动效及设计赋能三章。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav__logo">XIAOFU</a>
+    <div class="nav__links">
+      <a href="index.html" class="nav__link">首页</a>
+      <a href="work.html" class="nav__link active">作品</a>
+      <a href="about.html" class="nav__link">关于我</a>
+      <a href="contact.html" class="nav__link">联系</a>
+      <a href="#" class="btn btn--primary nav__cta">下载简历</a>
+    </div>
+    <button class="nav__burger" id="burger" aria-label="菜单"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="drawer" id="drawer">
+    <a href="index.html">首页</a><a href="work.html">作品</a><a href="about.html">关于我</a><a href="contact.html">联系</a>
+  </div>
+
+  <section class="section" style="padding-top:120px">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Portfolio</span>
+        <h2 class="section-title">全部作品</h2>
+        <p class="section-sub">11 个案例，按作品集三章组织。点击卡片查看完整设计思考。</p>
+      </div>
+
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="all">全部</button>
+        <button class="filter" data-filter="1">01 产品构建</button>
+        <button class="filter" data-filter="2">02 运营提升</button>
+        <button class="filter" data-filter="3">03 动效及设计赋能</button>
+      </div>
+
+      <div class="case-grid" id="caseGrid">
+        <!-- 01 产品构建 -->
+        <a href="work/welink-search.html" class="case-card reveal" data-chapter="1">
+          <div class="case-card__cover cov-1"><span class="case-card__chapter">01</span><span style="font-family:var(--font-en);font-weight:800;font-size:18px">WeLink 搜索改版</span></div>
+          <div class="case-card__body"><div class="case-card__title">搜索交互改版</div><div class="case-card__desc">让 30 万企业员工一步直达应用、人、知识。</div><div class="case-card__tags"><span class="tag">UX</span><span class="tag">交互</span></div></div>
+        </a>
+        <a href="#" class="case-card reveal" data-chapter="1">
+          <div class="case-card__cover cov-5"><span class="case-card__chapter">01</span><span style="font-family:var(--font-en);font-weight:800;font-size:18px">WeLink 服务中心</span></div>
+          <div class="case-card__body"><div class="case-card__title">服务中心</div><div class="case-card__desc">把散落 IT 服务装进统一服务门户。</div><div class="case-card__tags"><span class="tag">UX</span><span class="tag">UI</span></div></div>
+        </a>
+        <a href="#" class="case-card reveal" data-chapter="1">
+          <div class="case-card__cover cov-2"><span class="case-card__chapter">01</span><span style="font-family:var(--font-en);font-weight:800;font-size:18px">云之梦在线试衣</span></div>
+          <div class="case-card__body"><div class="case-card__title">在线试衣</div><div class="case-card__desc">0-1 虚拟试衣体验，融合 3D 与动效。</div><div class="case-card__tags"><span class="tag">UI</span><span class="tag">UX</span></div></div>
+        </a>
+        <a href="#" class="case-card reveal" data-chapter="1">
+          <div class="case-card__cover cov-7"><span class="case-card__chapter">01</span><span style="font-family:var(--font-en);font-weight:800;font-size:18px">WeLink 开放平台</span></div>
+          <div class="case-card__body"><div class="case-card__title">开放平台</div><div class="case-card__desc">开发者生态与接入体验设计。</div><div class="case-card__tags"><span class="tag">UX</span></div></div>
+        </a>
+        <!-- 02 运营提升 -->
+        <a href="#" class="case-card reveal" data-chapter="2">
+          <div class="case-card__cover cov-3"><span class="case-card__chapter">02</span><span style="font-family:var(--font-en);font-weight:800;font-size:18px">知识年度账单 H5</span></div>
+          <div class="case-card__body"><div class="case-card__title">年度账单 H5</div><div class="case-card__desc">数据故事化呈现一年知识沉淀。</div><div class="case-card__tags"><span class="tag">运营</span><span class="tag">动效</span></div></div>
+        </a>
+        <a href="#" class="case-card reveal" data-chapter="2">
+          <div class="case-card__cover cov-6"><span class="case-card__chapter">02</span><span style="font-family:var(--font-en);font-weight:800;font-size:18px">寻找华为好声音 H5</span></div>
+          <div class="case-card__body"><div class="case-card__title">华为好声音 H5</div><div class="case-card__desc">活动机制与投稿流程的轻量体验。</div><div class="case-card__tags"><span class="tag">运营</span><span class="tag">UX</span></div></div>
+        </a>
+        <a href="#" class="case-card reveal" data-chapter="2">
+          <div class="case-card__cover cov-4"><span class="case-card__chapter">02</span><span style="font-family:var(--font-en);font-weight:800;font-size:18px">宣传运营 Banner</span></div>
+          <div class="case-card__body"><div class="case-card__title">运营 Banner</div><div class="case-card__desc">系列视觉与插画风格统一表达。</div><div class="case-card__tags"><span class="tag">视觉</span></div></div>
+        </a>
+        <!-- 03 动效及设计赋能 -->
+        <a href="#" class="case-card reveal" data-chapter="3">
+          <div class="case-card__cover cov-2"><span class="case-card__chapter">03</span><span style="font-family:var(--font-en);font-weight:800;font-size:18px">智能试衣镜动效</span></div>
+          <div class="case-card__body"><div class="case-card__title">试衣镜动效</div><div class="case-card__desc">硬件交互界面的动效语言。</div><div class="case-card__tags"><span class="tag">动效</span></div></div>
+        </a>
+        <a href="#" class="case-card reveal" data-chapter="3">
+          <div class="case-card__cover cov-2"><span class="case-card__chapter">03</span><span style="font-family:var(--font-en);font-weight:800;font-size:18px">在线试衣动效</span></div>
+          <div class="case-card__body"><div class="case-card__title">试衣动效</div><div class="case-card__desc">试穿流程的状态过渡与反馈。</div><div class="case-card__tags"><span class="tag">动效</span></div></div>
+        </a>
+        <a href="#" class="case-card reveal" data-chapter="3">
+          <div class="case-card__cover cov-3"><span class="case-card__chapter">03</span><span style="font-family:var(--font-en);font-weight:800;font-size:18px">年度账单动效</span></div>
+          <div class="case-card__body"><div class="case-card__title">账单动效</div><div class="case-card__desc">数字滚动与场景切换的节奏。</div><div class="case-card__tags"><span class="tag">动效</span></div></div>
+        </a>
+        <a href="#" class="case-card reveal" data-chapter="3">
+          <div class="case-card__cover cov-7"><span class="case-card__chapter">03</span><span style="font-family:var(--font-en);font-weight:800;font-size:18px">PC 设计规范</span></div>
+          <div class="case-card__body"><div class="case-card__title">设计规范</div><div class="case-card__desc">可复用的设计语言与组件体系。</div><div class="case-card__tags"><span class="tag">规范</span></div></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__row">
+      <div>© 2026 肖辅 · UX 设计师作品集</div>
+      <div><a href="mailto:156944098@qq.com">156944098@qq.com</a> · <a href="contact.html">联系方式</a></div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
