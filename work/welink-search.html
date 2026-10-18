@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeLink 搜索改版 · 肖辅 UX 案例</title>
+  <meta name="description" content="WeLink 搜索交互改版案例：统一企业协同入口的搜索体验，让找应用、找人、找知识一步直达。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <a href="../index.html" class="nav__logo">XIAOFU</a>
+    <div class="nav__links">
+      <a href="../index.html" class="nav__link">首页</a>
+      <a href="../work.html" class="nav__link active">作品</a>
+      <a href="../about.html" class="nav__link">关于我</a>
+      <a href="../contact.html" class="nav__link">联系</a>
+      <a href="#" class="btn btn--primary nav__cta">下载简历</a>
+    </div>
+    <button class="nav__burger" id="burger" aria-label="菜单"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="drawer" id="drawer">
+    <a href="../index.html">首页</a><a href="../work.html">作品</a><a href="../about.html">关于我</a><a href="../contact.html">联系</a>
+  </div>
+
+  <!-- 侧边进度 -->
+  <div class="case-progress" id="caseProgress">
+    <a href="#bg" class="active" data-tip="背景"></a>
+    <a href="#role" data-tip="角色"></a>
+    <a href="#flow" data-tip="流程"></a>
+    <a href="#solution" data-tip="方案"></a>
+    <a href="#result" data-tip="成果"></a>
+  </div>
+
+  <section class="case-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="../work.html">作品</a> / 01 产品构建 / 搜索交互改版</div>
+      <h1>WeLink 搜索交互改版</h1>
+      <div class="en">WeLink Search Redesign · UX / Interaction</div>
+      <div class="case-meta">
+        <div><span class="k">项目角色</span><span class="v">交互设计 / 需求分析</span></div>
+        <div><span class="k">服务对象</span><span class="v">华为 WeLink（企业协同）</span></div>
+        <div><span class="k">所属章节</span><span class="v">01 产品构建</span></div>
+      </div>
+      <div class="case-cover-big cov-1 reveal"></div>
+    </div>
+  </section>
+
+  <main class="section" style="padding-top:0">
+    <div class="container case-body">
+      <div class="case-block reveal" id="bg">
+        <h2><span class="idx">01</span> 项目背景</h2>
+        <p>华为 30 余年发展中，内部各业务部门独立开发了大量 APP，"APP 繁多、系统割裂"成为效率黑洞。2016 年华为启动数字化转型，由质量与流程 IT 管理部推动，WeLink 正式立项。搜索是 WeLink 作为企业协同入口最高频的能力之一——用户需要在统一入口内找到应用、联系人、知识文档与服务。</p>
+        <p>改版前，搜索能力分散在多个模块：应用入口各自为政、联系人依赖通讯录多级跳转、知识文档缺少统一检索。内部调研显示"找不到、找得慢"是高频吐槽点之一。本次改版目标，是把分散的检索收敛为一个统一、智能、可预期的搜索体验。</p>
+      </div>
+
+      <div class="case-block reveal" id="role">
+        <h2><span class="idx">02</span> 我的角色</h2>
+        <p>独立负责搜索模块的需求分析与交互方案设计，输出交互稿并推动开发落地，参与改版后的数据回收与迭代。</p>
+        <div class="placeholder-note">【占位：如还有他人协作，简述分工】</div>
+      </div>
+
+      <div class="case-block reveal" id="flow">
+        <h2><span class="idx">03</span> 设计流程</h2>
+        <ul>
+          <li><b>问题定义：</b>通过用户访谈与埋点数据，梳理出三大待解问题——入口分散、结果无分类、缺少搜索记忆。</li>
+          <li><b>方案探索：</b>对比"全局统一搜索框"与"各模块本地搜索"两种思路，从复用性与用户心智成本角度选择前者；结果页采用「应用 / 联系人 / 公众号 / 知识」四分类聚合。</li>
+          <li><b>关键决策：</b>引入模糊联想、热词推荐与搜索历史直达，并在结果不足时给出"换种说法"的引导。</li>
+        </ul>
+      </div>
+
+      <div class="case-block reveal" id="solution">
+        <h2><span class="idx">04</span> 方案展示</h2>
+        <p><b>搜索首页：</b>热门应用 + 常用联系人 + 历史记录三段式，降低冷启动成本；</p>
+        <p><b>结果聚合页：</b>四分类 Tab + 各分类内卡片列表，支持关键词高亮；</p>
+        <p><b>空结果引导：</b>提供"试试这些""联系 IT 助手"等兜底路径。</p>
+        <div class="placeholder-note">【占位：补图——搜索首页、结果聚合页、空状态三张截图】</div>
+      </div>
+
+      <div class="case-block reveal" id="result">
+        <h2><span class="idx">05</span> 成果与价值</h2>
+        <ul>
+          <li>搜索点击率提升【占位：xx%】；</li>
+          <li>人均查找步骤由【占位：N 步】降至【占位：M 步】；</li>
+          <li>上线覆盖【占位：企业数 / 用户数】。</li>
+        </ul>
+        <div class="placeholder-note">【占位：如有权威数据来源（如内部复盘报告），在此注明出处】</div>
+      </div>
+
+      <div class="next-case reveal">
+        <a href="../work.html">← 返回作品列表</a>
+        <a href="../work.html">下一个案例 →</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__row">
+      <div>© 2026 肖辅 · UX 设计师作品集</div>
+      <div><a href="mailto:156944098@qq.com">156944098@qq.com</a> · <a href="../contact.html">联系方式</a></div>
+    </div>
+  </footer>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
