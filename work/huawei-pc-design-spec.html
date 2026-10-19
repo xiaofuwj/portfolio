@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>华为 PC 设计规范 · 肖辅 UX 案例</title>
+  <meta name="description" content="华为流程 IT 内部 PC 端设计规范案例：一个人写规范，让 N 个项目的界面长得像一家人。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <a href="../index.html" class="nav__logo">XIAOFU</a>
+    <div class="nav__links">
+      <a href="../index.html" class="nav__link">首页</a>
+      <a href="../work.html" class="nav__link active">作品</a>
+      <a href="../about.html" class="nav__link">关于我</a>
+      <a href="../contact.html" class="nav__link">联系</a>
+      <a href="#" class="btn btn--primary nav__cta">下载简历</a>
+    </div>
+    <button class="nav__burger" id="burger" aria-label="菜单"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="drawer" id="drawer">
+    <a href="../index.html">首页</a><a href="../work.html">作品</a><a href="../about.html">关于我</a><a href="../contact.html">联系</a>
+  </div>
+
+  <div class="case-progress" id="caseProgress">
+    <a href="#bg" class="active" data-tip="背景"></a>
+    <a href="#role" data-tip="角色"></a>
+    <a href="#flow" data-tip="构建"></a>
+    <a href="#solution" data-tip="规范"></a>
+    <a href="#result" data-tip="成果"></a>
+  </div>
+
+  <section class="case-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="../work.html">作品</a> / 03 动效及设计赋能 / 设计规范</div>
+      <h1>华为流程 IT 内部 PC 端设计规范</h1>
+      <div class="en">Huawei PC Design System · Design System / Enablement</div>
+      <div class="case-meta">
+        <div><span class="k">项目角色</span><span class="v">规范主笔</span></div>
+        <div><span class="k">服务对象</span><span class="v">华为流程 IT（内部 PC 系统）</span></div>
+        <div><span class="k">所属章节</span><span class="v">03 动效及设计赋能</span></div>
+      </div>
+      <div class="case-cover-big cov-7 reveal"></div>
+    </div>
+  </section>
+
+  <main class="section" style="padding-top:0">
+    <div class="container case-body">
+      <div class="case-block reveal" id="bg">
+        <h2><span class="idx">01</span> 项目背景</h2>
+        <p>华为流程 IT 内部存在大量 PC 端系统，各项目界面风格不一、组件重复造轮子。目标是沉淀一套内部 PC 端设计规范，让设计与前端有共同语言，新页面"拼组件即可用"，从源头减少一致性损耗。</p>
+      </div>
+
+      <div class="case-block reveal" id="role">
+        <h2><span class="idx">02</span> 我的角色</h2>
+        <p>担任规范主笔：色彩、字体、栅格、组件与页面模板的定义与文档化。</p>
+      </div>
+
+      <div class="case-block reveal" id="flow">
+        <h2><span class="idx">03</span> 规范构建流程</h2>
+        <ul>
+          <li><b>盘点现状：</b>收集各内部系统的界面，提炼重复出现的模式与冲突点；</li>
+          <li><b>定义 Token：</b>将色彩、字号、间距、圆角抽象为可复用的设计变量；</li>
+          <li><b>沉淀组件：</b>以高频组件（表格 / 表单 / 弹窗 / 步骤条）为优先，定义状态与交互；</li>
+          <li><b>文档化：</b>输出可检索的规范文档与页面模板，降低新项目启动成本。</li>
+        </ul>
+      </div>
+
+      <div class="case-block reveal" id="solution">
+        <h2><span class="idx">04</span> 规范核心内容</h2>
+        <p><b>色彩：</b>主色蓝 <code>#009AFF</code> 体现智能 / 安全 / 专业；辅助色绿 <code>#00C483</code>、橙 <code>#FF8803</code>、玫红 <code>#FA045A</code>、紫 <code>#4C20FA</code>、青 <code>#2BD2FF</code>；灰阶从标题 <code>#333333</code> 到页面背景 <code>#F5F6F5</code> 共 8 级，每级明确用途（禁用 / 分割线 / 边框 / 容器背景）。</p>
+        <p><b>字体：</b>iOS 中文苹方、Android 跟随系统原生、英文数字 Helvetial；行高为字号的 1.4 倍。</p>
+        <p><b>字号体系：</b>T1 18pt 一级标题 / 模块标题 → T5 10pt 辅助说明，五级递进、适用范围明确。</p>
+        <p><b>栅格与间距：</b>【占位：栏数 / 槽宽 / 基础间距 8px 的倍数体系描述】。</p>
+        <p><b>核心组件：</b>【占位：表格 / 表单 / 弹窗 / 步骤条等组件清单与状态】。</p>
+        <p><b>落地方式：</b>【占位：是否提供 Sketch 组件库 / 前端代码库，规范如何被强制或推荐采用】。</p>
+        <div class="placeholder-note">【占位：补图——色彩规范页、文字规范页、组件示例】</div>
+      </div>
+
+      <div class="case-block reveal" id="result">
+        <h2><span class="idx">05</span> 成果与价值</h2>
+        <ul>
+          <li>规范覆盖【占位：N 个】内部项目；</li>
+          <li>新页面设计 / 前端搭建效率提升【占位：定性或定量描述】。</li>
+        </ul>
+        <div class="placeholder-note">【占位：如有可公开的数据来源，在此注明】</div>
+      </div>
+
+      <div class="next-case reveal">
+        <a href="../work.html">← 返回作品列表</a>
+        <a href="../work/welink-search.html">回到第一个案例 →</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__row">
+      <div>© 2026 肖辅 · UX 设计师作品集</div>
+      <div><a href="mailto:156944098@qq.com">156944098@qq.com</a> · <a href="../contact.html">联系方式</a></div>
+    </div>
+  </footer>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
