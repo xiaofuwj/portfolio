@@ -440,3 +440,82 @@ ul { list-style: none; }
 @media (max-width: 480px) {
   .ability-grid { grid-template-columns: 1fr; }
 }
+
+/* =========================================================
+   图标系统 — 唯一来源：Mage Icons (https://mageicons.com, Apache-2.0)
+   图标经 tools/fetch_mage_icons.py 拉取并存于 assets/icons/，
+   由 mage-sprite.svg 提供 <symbol>，页面通过 <use> 引用。
+   约束：全站图标一律取自 Mage Icons，禁止混用其他图标库，保持视觉统一。
+   ========================================================= */
+.ico {
+  width: 1.25em; height: 1.25em;
+  display: inline-block; flex: none;
+  vertical-align: -0.15em;
+  color: inherit;            /* 线性图标：symbol 内路径用 stroke="currentColor" */
+  fill: none;
+}
+.ico--fill { fill: currentColor; stroke: none; }   /* 品牌填充图标（github/linkedin/x/we-chat） */
+.ico--xs { width: 14px; height: 14px; }
+.ico--sm { width: 18px; height: 18px; }
+.ico--1  { width: 20px; height: 20px; }
+.ico--2  { width: 24px; height: 24px; }
+.ico--lg { width: 28px; height: 28px; }
+.ico--muted { color: var(--t-sub); }
+.ico--brand { color: var(--brand); }
+.ico--accent { color: var(--accent); }
+.ico--white { color: #fff; }
+
+/* 导航 logo 图标 */
+.nav__logo { display: inline-flex; align-items: center; gap: 8px; }
+.nav__logo .ico { width: 22px; height: 22px; }
+
+/* Hero 滚动提示 */
+.hero__scroll .ico { width: 18px; height: 18px; }
+
+/* 能力卡图标 */
+.ability__icon .ico { width: 22px; height: 22px; }
+
+/* 页脚社交图标 */
+.footer__social { display: flex; gap: 10px; margin-top: 14px; }
+.footer__social a {
+  width: 36px; height: 36px; display: grid; place-items: center;
+  border-radius: var(--r-md); border: 1px solid var(--bd-soft);
+  color: var(--t-sub); background: var(--color-surface-elevated);
+  transition: all var(--dur) var(--ease);
+}
+.footer__social a:hover { color: var(--color-on-dark); background: var(--brand); border-color: var(--brand); transform: translateY(-2px); }
+.footer__social .ico { width: 18px; height: 18px; }
+
+/* 作品筛选 Tab 图标 */
+.filter { display: inline-flex; align-items: center; gap: 8px; }
+.filter .ico { width: 16px; height: 16px; }
+
+/* 案例进度侧栏图标 + 悬浮标签 */
+.case-progress a {
+  position: relative;
+  width: auto; height: auto; border-radius: var(--r-sm); padding: 9px;
+  background: var(--color-surface-elevated); border: 1px solid var(--bd-soft);
+  display: grid; place-items: center;
+}
+.case-progress a .ico { width: 18px; height: 18px; color: var(--t-sub); }
+.case-progress a.active { background: var(--brand-soft); border-color: var(--brand); transform: none; }
+.case-progress a.active .ico { color: var(--brand); }
+.case-progress a[data-tip]:hover::after {
+  content: attr(data-tip);
+  position: absolute; right: calc(100% + 10px); top: 50%; transform: translateY(-50%);
+  background: var(--color-surface-elevated); border: 1px solid var(--bd-soft);
+  color: var(--t-title); font-size: 12px; padding: 4px 8px; border-radius: var(--r-sm);
+  white-space: nowrap; pointer-events: none;
+}
+
+/* 关于页时间线图标 */
+.tl-role { display: inline-flex; align-items: center; gap: 8px; }
+.tl-role .ico { width: 16px; height: 16px; color: var(--brand); }
+
+/* 联系页信息行图标 */
+.contact-list { display: grid; gap: 14px; margin-top: 28px; }
+.contact-row { display: flex; align-items: center; gap: 14px; padding: 16px 18px; border: 1px solid var(--bd-soft); border-radius: var(--r-lg); background: var(--color-surface-card); }
+.contact-row .ico { width: 22px; height: 22px; color: var(--brand); flex: none; }
+.contact-row .k { color: var(--t-sub); font-size: 12px; }
+.contact-row .v { color: var(--t-title); font-weight: 600; }
+.contact-row .v a { color: inherit; }
