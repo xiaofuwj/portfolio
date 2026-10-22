@@ -8,3 +8,6 @@ Thumbs.db
 # 编辑器
 .idea/
 .vscode/
+
+# 图标抓取脚本生成的构建产物
+.mage_tree.json

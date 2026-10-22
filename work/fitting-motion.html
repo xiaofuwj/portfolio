@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>在线试衣动效 · 肖辅 UX 案例</title>
+  <meta name="description" content="云之梦在线试衣 App 动效案例：换一件衣服只需 0.x 秒的魔法感，是精心设计的错觉。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <a href="../index.html" class="nav__logo"><svg class="ico ico--brand" aria-hidden="true"><use href="assets/icons/mage-sprite.svg#mage-compass"/></svg>XIAOFU</a>
+    <div class="nav__links">
+      <a href="../index.html" class="nav__link">首页</a>
+      <a href="../work.html" class="nav__link active">作品</a>
+      <a href="../about.html" class="nav__link">关于我</a>
+      <a href="../contact.html" class="nav__link">联系</a>
+      <a href="#" class="btn btn--primary nav__cta">下载简历</a>
+    </div>
+    <button class="nav__burger" id="burger" aria-label="菜单"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="drawer" id="drawer">
+    <a href="../index.html">首页</a><a href="../work.html">作品</a><a href="../about.html">关于我</a><a href="../contact.html">联系</a>
+  </div>
+
+  <div class="case-progress" id="caseProgress">
+    <a href="#bg" class="active" data-tip="背景"></a>
+    <a href="#role" data-tip="角色"></a>
+    <a href="#motion" data-tip="动效"></a>
+    <a href="#result" data-tip="成果"></a>
+  </div>
+
+  <section class="case-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="../work.html">作品</a> / 03 动效及设计赋能 / 试衣动效</div>
+      <h1>在线试衣动效</h1>
+      <div class="en">Fitting Motion · Motion / Mobile</div>
+      <div class="case-meta">
+        <div><span class="k">项目角色</span><span class="v">动效设计 + 实现标注</span></div>
+        <div><span class="k">服务对象</span><span class="v">云之梦在线试衣 App</span></div>
+        <div><span class="k">所属章节</span><span class="v">03 动效及设计赋能</span></div>
+      </div>
+      <div class="case-cover-big cov-2 reveal"></div>
+    </div>
+  </section>
+
+  <main class="section" style="padding-top:0">
+    <div class="container case-body">
+      <div class="case-block reveal" id="bg">
+        <h2><span class="idx">01</span> 项目背景</h2>
+        <p>在线试衣 App 中，用户换装时需要等待 3D 渲染。动效的目标是<strong>掩盖等待</strong>并强化"立刻穿上"的魔法感，让等待不再被感知为等待。</p>
+      </div>
+
+      <div class="case-block reveal" id="role">
+        <h2><span class="idx">02</span> 我的角色</h2>
+        <p>负责换装转场、模特旋转、衣物贴合等关键动效设计与实现标注。</p>
+      </div>
+
+      <div class="case-block reveal" id="motion">
+        <h2><span class="idx">03</span> 动效设计</h2>
+        <ul>
+          <li><b>换装转场：</b>衣物层与模特层分离处理——衣物先淡出 / 收拢，新衣物由下而上"穿上"，250–350ms；</li>
+          <li><b>模特旋转：</b>支持拖拽 360° 查看，释放后带轻微惯性回弹，增强真实感；</li>
+          <li><b>加载动效：</b>渲染未就绪时模特先以低面数预览 + 柔光过渡，到位后无缝升面。</li>
+        </ul>
+        <div class="placeholder-note">【占位：补视频 / GIF——换装转场与旋转演示】</div>
+      </div>
+
+      <div class="case-block reveal" id="result">
+        <h2><span class="idx">04</span> 成果与价值</h2>
+        <ul>
+          <li>换装等待的"感知时长"下降【占位：xx%】；</li>
+          <li>人均试穿次数提升【占位：xx%】。</li>
+        </ul>
+        <div class="placeholder-note">【占位：如有可公开的数据来源，在此注明】</div>
+      </div>
+
+      <div class="next-case reveal">
+        <a href="../work.html">← 返回作品列表</a>
+        <a href="../work/bill-motion.html">下一个案例 →</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__row">
+      <div>© 2026 肖辅 · UX 设计师作品集</div>
+      <div><a href="mailto:156944098@qq.com">156944098@qq.com</a> · <a href="../contact.html">联系方式</a></div>
+    </div>
+    <div class="footer__social">
+    <a href="https://github.com/xiaofuwj" target="_blank" rel="noopener" aria-label="GitHub"><svg class="ico ico--fill" aria-hidden="true"><use href="assets/icons/mage-sprite.svg#mage-github"/></svg></a>
+    <a href="https://www.linkedin.com/in/xiaofu" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ico ico--fill" aria-hidden="true"><use href="assets/icons/mage-sprite.svg#mage-linkedin"/></svg></a>
+    <a href="https://x.com/xiaofuwj" target="_blank" rel="noopener" aria-label="X"><svg class="ico ico--fill" aria-hidden="true"><use href="assets/icons/mage-sprite.svg#mage-x"/></svg></a>
+    <a href="mailto:156944098@qq.com" aria-label="Email"><svg class="ico" aria-hidden="true"><use href="assets/icons/mage-sprite.svg#mage-email"/></svg></a>
+  </div>
+</footer>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

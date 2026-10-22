@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>云之梦在线试衣 · 肖辅 UX 案例</title>
+  <meta name="description" content="云之梦在线试衣案例：用 3D 虚拟试衣把尺码合不合适的犹豫变成下单的决心，融合交互与动效。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <a href="../index.html" class="nav__logo"><svg class="ico ico--brand" aria-hidden="true"><use href="assets/icons/mage-sprite.svg#mage-compass"/></svg>XIAOFU</a>
+    <div class="nav__links">
+      <a href="../index.html" class="nav__link">首页</a>
+      <a href="../work.html" class="nav__link active">作品</a>
+      <a href="../about.html" class="nav__link">关于我</a>
+      <a href="../contact.html" class="nav__link">联系</a>
+      <a href="#" class="btn btn--primary nav__cta">下载简历</a>
+    </div>
+    <button class="nav__burger" id="burger" aria-label="菜单"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="drawer" id="drawer">
+    <a href="../index.html">首页</a><a href="../work.html">作品</a><a href="../about.html">关于我</a><a href="../contact.html">联系</a>
+  </div>
+
+  <div class="case-progress" id="caseProgress">
+    <a href="#bg" class="active" data-tip="背景"></a>
+    <a href="#role" data-tip="角色"></a>
+    <a href="#flow" data-tip="流程"></a>
+    <a href="#solution" data-tip="方案"></a>
+    <a href="#result" data-tip="成果"></a>
+  </div>
+
+  <section class="case-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="../work.html">作品</a> / 01 产品构建 / 在线试衣</div>
+      <h1>云之梦在线试衣</h1>
+      <div class="en">Yunzhimong Virtual Fitting · UI / Interaction / Motion</div>
+      <div class="case-meta">
+        <div><span class="k">项目角色</span><span class="v">UI 设计 / 交互 / 动效配合</span></div>
+        <div><span class="k">服务对象</span><span class="v">云之梦科技（服装品牌 SaaS）</span></div>
+        <div><span class="k">所属章节</span><span class="v">01 产品构建</span></div>
+      </div>
+      <div class="case-cover-big cov-2 reveal"></div>
+    </div>
+  </section>
+
+  <main class="section" style="padding-top:0">
+    <div class="container case-body">
+      <div class="case-block reveal" id="bg">
+        <h2><span class="idx">01</span> 项目背景</h2>
+        <p>深圳云之梦科技（2016/4–2018/4 任职期间）主打 AI + 3D 虚拟试衣技术，为服装品牌提供线上试穿解决方案。电商场景中"看得到、试不了"是服装品类退货率高、客单价受限的核心原因之一。在线试衣要同时解决<strong>真实感</strong>（身材 / 尺码还原）与<strong>流畅感</strong>（试穿操作的即时反馈）两个问题。</p>
+      </div>
+
+      <div class="case-block reveal" id="role">
+        <h2><span class="idx">02</span> 我的角色</h2>
+        <p>担任 UI 设计师，负责试衣主流程界面、模特 / 衣物选择交互，并与动效配合完成换装反馈设计。</p>
+      </div>
+
+      <div class="case-block reveal" id="flow">
+        <h2><span class="idx">03</span> 设计流程</h2>
+        <ul>
+          <li><b>数据录入：</b>提供"拍照量体"与"手动填参"两种身材采集方式，降低首次使用门槛；</li>
+          <li><b>流程精简：</b>将选款 → 试穿 → 调尺码 → 加购 压缩为单屏内可完成的连续操作；</li>
+          <li><b>弱网策略：</b>3D 渲染未就绪时先展示轻量占位与骨架，避免白屏焦虑。</li>
+        </ul>
+      </div>
+
+      <div class="case-block reveal" id="solution">
+        <h2><span class="idx">04</span> 方案展示</h2>
+        <p><b>试衣主界面：</b>左侧模特、右侧衣物库的分栏布局，支持按品类 / 风格筛选；</p>
+        <p><b>换装操作：</b>点击衣物即触发换装动效，尺码推荐结果以卡片呈现并支持一键调码；</p>
+        <p><b>结果页：</b>试穿快照可保存、分享或直达购买。</p>
+        <div class="placeholder-note">【占位：补图——试衣主界面、换装操作、尺码推荐结果页】</div>
+      </div>
+
+      <div class="case-block reveal" id="result">
+        <h2><span class="idx">05</span> 成果与价值</h2>
+        <ul>
+          <li>接入合作品牌【占位：N 家】；</li>
+          <li>试衣后下单转化提升【占位：xx%】，退货率下降【占位：xx%】。</li>
+        </ul>
+        <div class="placeholder-note">【占位：如有可公开的数据来源，在此注明】</div>
+      </div>
+
+      <div class="next-case reveal">
+        <a href="../work.html">← 返回作品列表</a>
+        <a href="../work/welink-open-platform.html">下一个案例 →</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__row">
+      <div>© 2026 肖辅 · UX 设计师作品集</div>
+      <div><a href="mailto:156944098@qq.com">156944098@qq.com</a> · <a href="../contact.html">联系方式</a></div>
+    </div>
+    <div class="footer__social">
+    <a href="https://github.com/xiaofuwj" target="_blank" rel="noopener" aria-label="GitHub"><svg class="ico ico--fill" aria-hidden="true"><use href="assets/icons/mage-sprite.svg#mage-github"/></svg></a>
+    <a href="https://www.linkedin.com/in/xiaofu" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ico ico--fill" aria-hidden="true"><use href="assets/icons/mage-sprite.svg#mage-linkedin"/></svg></a>
+    <a href="https://x.com/xiaofuwj" target="_blank" rel="noopener" aria-label="X"><svg class="ico ico--fill" aria-hidden="true"><use href="assets/icons/mage-sprite.svg#mage-x"/></svg></a>
+    <a href="mailto:156944098@qq.com" aria-label="Email"><svg class="ico" aria-hidden="true"><use href="assets/icons/mage-sprite.svg#mage-email"/></svg></a>
+  </div>
+</footer>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
